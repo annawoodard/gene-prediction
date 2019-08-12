@@ -55,12 +55,12 @@ config = Config(
            ),
         ),
     ],
-    monitoring=MonitoringHub(
-        hub_address=address_by_interface('ib0'),
-        hub_port=55055,
-        logging_level=logging.INFO,
-        resource_monitoring_interval=10,
-    ),
+    # monitoring=MonitoringHub(
+    #     hub_address=address_by_interface('ib0'),
+    #     hub_port=55055,
+    #     logging_level=logging.INFO,
+    #     resource_monitoring_interval=10,
+    # ),
     strategy='simple',
     retries=3
 )
